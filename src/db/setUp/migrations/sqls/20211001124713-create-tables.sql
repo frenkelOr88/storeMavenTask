@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS earthquake (
+    id VARCHAR(100) NOT NULL PRIMARY KEY,
+    mag VARCHAR(100) NOT NULL,
+    place VARCHAR(100) NOT NULL,
+    time VARCHAR(100) NOT NULL,
+    title VARCHAR(100) NOT NULL,
+    longitude VARCHAR(100) NOT NULL,
+    latitude VARCHAR(100) NOT NULL,
+    elevation VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS lastUpdateData (
+    id VARCHAR(100) NOT NULL PRIMARY KEY,
+    value VARCHAR(100)
+);
+
+INSERT INTO lastUpdateData values('lastUpdate','1633187453000');

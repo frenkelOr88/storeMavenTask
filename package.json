@@ -1,0 +1,21 @@
+{
+  "name": "store_maven_task",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "mysql-up": "docker rm -f sql; docker run -d --name sql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=earthquakes mysql:5",
+    "migration-db": "ts-node src/db/setUp/migration.ts",
+    "start": "ts-node src/index.ts"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "db-migrate": "^1.0.0-beta.16",
+    "db-migrate-mysql": "^2.2.0",
+    "envboss": "^1.1.1",
+    "got": "^11.8.2",
+    "mysql": "^2.18.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
