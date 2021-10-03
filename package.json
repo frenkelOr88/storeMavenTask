@@ -11,7 +11,7 @@
   "devDependencies": {},
   "dependencies": {
     "@types/node-cron": "^3.0.0",
-    "db-migrate": "^1.0.0-beta.16",
+    "db-migrate": "^0.11.11",
     "db-migrate-mysql": "^2.2.0",
     "envboss": "^1.1.1",
     "got": "^11.8.2",
