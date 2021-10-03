@@ -10,6 +10,7 @@ const ENV_VAR_CONFIG = {
     EARTHQUAKE_SERVICE_URL: {default: 'https://earthquake.usgs.gov', type: Types.String},
     ELEVATION_SERVICE_URL: {default: 'https://api.airmap.com', type: Types.String},
     MAX_PROMISE: {default: 30, type: Types.Number},
+    CRON_EXECUTION: {default: '*/30 * * * *', type: Types.String},
 };
 
 interface Env {
@@ -21,6 +22,7 @@ interface Env {
     EARTHQUAKE_SERVICE_URL: string;
     ELEVATION_SERVICE_URL: string;
     MAX_PROMISE: number;
+    CRON_EXECUTION: string;
 
 }
 

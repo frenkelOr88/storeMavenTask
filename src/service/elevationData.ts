@@ -16,7 +16,7 @@ export class ElevationDataManager {
 
     private async enrichEarthquakeData(earthquake: Earthquake) {
         const elevationRes = await this.elevationAPIService.getElevationData(earthquake.latitude, earthquake.longitude);
-        const elevation = elevationRes.body.data[0];
+        const elevation = elevationRes.body.data[0] || 'no elevation data';
         earthquake.elevation = elevation.toString();
     }
 

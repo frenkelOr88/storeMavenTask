@@ -13,7 +13,7 @@ export default class Earthquake {
         this.mag = earthquake['mag'];
         this.place = earthquake['place'];
         this.title = earthquake['title'];
-        this.time = earthquake['title'];
+        this.time = earthquake['time'];
         this.longitude = earthquake['longitude'];
         this.latitude = earthquake['latitude'];
         this.elevation = earthquake['elevation'];
